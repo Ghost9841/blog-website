@@ -11,7 +11,13 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        redlogo: "#661222",
+        darklogo: "#363636",
+        whitelogo: "#b8bdb7"
       },
+      fontFamily:{
+        poppins : ["var(--font-poppins)"]
+      }
     },
   },
   plugins: [],

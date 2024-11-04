@@ -1,7 +1,15 @@
-import Image from "next/image";
+'use client'
+import BlogItem from "@/components/BlogItem"
+import NavBar from "@/components/NavBar"
 
-export default function Home() {
+
+const Home = () => {
   return (
-   <div className="">Home</div>
-  );
+    <div>
+     <NavBar/>
+    <BlogItem/>
+    </div>
+  )
 }
+
+export default Home
