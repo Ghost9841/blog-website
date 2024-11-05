@@ -1,13 +1,13 @@
 'use client'
-import BlogItem from "@/components/BlogItem"
-import NavBar from "@/components/NavBar"
+import BlogList from "@/components/BlogList"
+import Header from "@/components/Header"
 
 
 const Home = () => {
   return (
     <div>
-     <NavBar/>
-    <BlogItem/>
+     <Header/>
+    <BlogList/>
     </div>
   )
 }

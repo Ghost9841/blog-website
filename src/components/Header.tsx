@@ -5,7 +5,7 @@ import logo from "@/assets/Assets/logo.png";
 import arrow from "@/assets/Assets/arrow.png";
 
 
-const NavBar = () => {
+const Header = () => {
   return (
     <div className='py-5 px-5 md:px-12 lg:px-28'>
       <div className="flex justify-between items-center">
@@ -28,4 +28,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default Header
