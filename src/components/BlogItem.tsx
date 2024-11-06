@@ -8,6 +8,7 @@ interface BlogItemProps{
   category: string
   image: StaticImageData
   id: number
+  
 }
 const BlogItem = ({title,description,category,image,id}:BlogItemProps) => {
   return (
