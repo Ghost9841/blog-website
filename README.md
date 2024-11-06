@@ -2,10 +2,6 @@
 
 This is a full-stack blog website for Chess Nepal, built to share chess strategies, puzzles, news, and more with the chess community.
 
-**Creator**: Aakash Subedi
-
-> **Note**: Commits by `Asis423` were made by `Ghost9841` due to account mix-ups on the same device.
-
 ## Introduction
 Welcome to the Chess Nepal Blog! Whether you're a beginner or an experienced chess player, this site is your go-to source for engaging content on chess strategies, puzzles, game reviews, and more. With this platform, you can not only read articles but also create, manage, and interact with content through a user-friendly interface.
 
