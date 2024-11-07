@@ -7,9 +7,9 @@ import Link from "next/link";
 import { useEffect, useState } from "react"
 
 interface BlogPageProps {
-  params: {
+  params:Promise< {
     id: number,
-  }
+  }>
 }
 interface BlogData {
   author_img: StaticImageData;
@@ -34,9 +34,9 @@ const BlogPage = ({params}: BlogPageProps) => {
   };
 
   const [data, getData] = useState<BlogData | null>(null);
-  const fetchBlogData = ()=> {
+  const fetchBlogData = async ()=> {
     for (let i = 0; i < blog_data.length; i++) {
-     if (Number(params.id)===blog_data[i].id) {
+     if (Number((await params).id)===blog_data[i].id) {
       getData(blog_data[i]);
       console.log(blog_data[i]);
       break;

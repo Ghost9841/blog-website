@@ -1,8 +1,10 @@
 {
+  "homepage": "https://ghost9841.github.io/blog-website",
   "name": "blog-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "deploy" : "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -11,8 +13,8 @@
   "dependencies": {
     "framer-motion": "^11.11.11",
     "next": "15.0.2",
-    "react": "19.0.0-rc-02c0e824-20241028",
-    "react-dom": "19.0.0-rc-02c0e824-20241028"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -20,6 +22,7 @@
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "15.0.2",
+    "gh-pages": "^6.2.0",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
