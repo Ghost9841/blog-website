@@ -4,11 +4,13 @@ import React from 'react'
 import logo from "@/assets/Assets/logo.png";
 import arrow from "@/assets/Assets/arrow.png";
 import Link from 'next/link';
+import TransitionEffect from './TransitionEffect';
 
 
 const NavBar = () => {
   return (
     <div className='py-5 px-5 md:px-12 lg:px-28'>
+      <TransitionEffect/>
       <div className="flex justify-between items-center">
         <Link href='/' className='hover:shadow-[-7px_-7px_0px_#363636]'>
         <Image src={logo} width={40} alt ='logo' className='w-[80px]  sm:w-auto'/>

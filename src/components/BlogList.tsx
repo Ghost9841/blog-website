@@ -1,6 +1,7 @@
 import { blog_data } from "@/assets/Assets/assets";
 import BlogItem from "./BlogItem";
 import { useState } from "react";
+import TransitionEffect from "./TransitionEffect";
 
 
 const BlogList = () => {
@@ -8,6 +9,7 @@ const BlogList = () => {
 
   return (
     <div>
+      <TransitionEffect/>
       <div className="flex justify-center gap-6 my-10">
         <button onClick={()=> setMenu('All')} 
         className={menu==="All"?`bg-black text-white py-1 px-4 rounded-sm`:""}>

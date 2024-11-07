@@ -1,6 +1,7 @@
 'use client'
 import { assets, blog_data } from "@/assets/Assets/assets";
 import NavBar from "@/components/Header";
+import TransitionEffect from "@/components/TransitionEffect";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react"
@@ -50,6 +51,7 @@ const BlogPage = ({params}: BlogPageProps) => {
   
   return (data?<>
     <div className="bg-gray-300 py-5 px-5 md:px-12 lg:px-28">
+      <TransitionEffect/>
       <NavBar/>
       <div className="text-center my-24">
         <h1 className="text-3xl sm:text-5xl font-semibold max-w-[700px] mx-auto">{data.title}</h1>
