@@ -46,7 +46,7 @@ const BlogPage = ({params}: BlogPageProps) => {
   }
   useEffect(()=>{
     fetchBlogData();
-  },[])
+  },)
 
   
   return (data?<>
