@@ -1,10 +1,10 @@
 {
-  "homepage": "https://ghost9841.github.io/blog-website",
+  "homepage": "https://Ghost9841.github.io/blog-website",
   "name": "blog-website",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "deploy" : "gh-pages -d build",
+    "deploy": "gh-pages -d .next",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
