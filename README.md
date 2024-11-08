@@ -9,6 +9,7 @@ This blog is built using modern technologies, ensuring a robust, performant, and
 
 # For the Demo of This Website. You can check it on :
 # https://blog-website-chess-nepal.netlify.app/ 
+This is only Frontend for now, The backend is on the development phase you will soon hear about the backend being deployed too.
 
 ## Features
 - **Full-Stack Functionality**:
