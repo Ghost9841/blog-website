@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import TransitionEffect from "@/components/TransitionEffect";
+import { assets } from "@/assets/Assets/assets";
 
 const poppins = Poppins({
   weight: ['100','300','200','500','600','700','800','900'],
@@ -25,12 +26,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <meta property="og:title" content="Blog Website" />
-      <meta property="og:description" content="It is website of Blogs of Chess Nepal" />
-      <meta property="og:image" content="URL to your preview image" />
-      <meta property="og:url" content="https://blog-website-chess-nepal.netlify.app/" />
+      <meta property="og:description" content="It is a website of Blogs of Chess Nepal" />
+      <meta property="og:image" content={assets.logo.src} />
+      <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : ''} />
 
       <body
-        className={`${poppins.variable}  antialiased bg-white text-black
+        className={`${poppins.variable} antialiased bg-white text-black
         overflow-x-hidden max-w-100vw ml-auto mr-auto
         `}
       >
