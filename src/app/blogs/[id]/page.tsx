@@ -1,5 +1,6 @@
 'use client'
 import { assets, blog_data } from "@/assets/Assets/assets";
+import FooterButton from "@/components/FooterButton";
 import NavBar from "@/components/Header";
 import TransitionEffect from "@/components/TransitionEffect";
 import Image, { StaticImageData } from "next/image";
@@ -73,28 +74,7 @@ const BlogPage = ({params}: BlogPageProps) => {
       <div className="my-24">
           <p className="text-black font-semibold my-4">Share this article on social media</p>
           <div className="flex">
-          <Link
-                href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("http://localhost:3000")}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Image src={assets.facebook_icon} width={50} height={50} alt="facebook icon" />
-              </Link>
-
-              <Link
-                  href={`https://twitter.com/intent/tweet?url=${encodeURIComponent("https://yourwebsite.com")}&text=${encodeURIComponent("Check this out!")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image src={assets.twitter_icon} width={50} height={50} alt="twitter icon" />
-                </Link>
-                <Link
-                  href={`https://mail.google.com/mail/?view=cm&fs=1&to=&su=${encodeURIComponent("Check this out!")}&body=${encodeURIComponent("I thought you might like this: https://yourwebsite.com")}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image src={assets.googleplus_icon} width={50} height={50} alt="gmail icon" />
-                </Link>
+        <FooterButton/>
             <button onClick={copyToClipboard} className="bg-black text-white px-4 py-2 rounded-full ml-4">
       {copied ? "Copied!" : "Copy Link"}
     </button>
