@@ -1,10 +1,9 @@
 'use client'
-import { assets, blog_data } from "@/assets/Assets/assets";
+import { blog_data } from "@/assets/Assets/assets";
 import FooterButton from "@/components/FooterButton";
 import NavBar from "@/components/Header";
 import TransitionEffect from "@/components/TransitionEffect";
 import Image, { StaticImageData } from "next/image";
-import Link from "next/link";
 import { useEffect, useState } from "react"
 
 interface BlogPageProps {
