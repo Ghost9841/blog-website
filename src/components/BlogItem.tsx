@@ -1,6 +1,6 @@
 'use client'
 import Image, { StaticImageData } from "next/image";
-import { assets, blog_data } from "@/assets/Assets/assets";
+import { assets, } from "@/assets/Assets/assets";
 import Link from "next/link";
 import TransitionEffect from "./TransitionEffect";
 
