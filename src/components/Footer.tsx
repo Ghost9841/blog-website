@@ -13,7 +13,7 @@ const Footer = () => {
         </div>
         <p className="text-sm">All right reserved. Copyright @ChessNepal</p>
         <div className="flex ">
-        <FooterButton/>
+        <FooterButton />
         </div>
       
     </div>

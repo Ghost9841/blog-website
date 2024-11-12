@@ -26,7 +26,7 @@ const FooterButton = () => {
         <Image src={assets.facebook_icon} width={50} height={50} alt="facebook icon" />
       </Link>
 
-      {/* Twitter Share Button */}
+
       <Link
         href={`https://x.com/intent/tweet?url=${encodeURIComponent(
           currentUrl || "https://blog-website-chess-nepal.netlify.app/"
@@ -37,7 +37,7 @@ const FooterButton = () => {
         <Image src={assets.twitter_icon} width={50} height={50} alt="twitter icon" />
       </Link>
 
-      {/* Gmail Share Button */}
+
       <Link
         href={`https://mail.google.com/mail/?view=cm&fs=1&to=&su=${encodeURIComponent(
           "Check this out!"

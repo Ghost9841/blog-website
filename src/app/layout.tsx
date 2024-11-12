@@ -25,6 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
       <meta property="og:title" content="Blog Website" />
       <meta property="og:description" content="It is a website of Blogs of Chess Nepal" />
       <meta property="og:image" content={assets.logo.src} />

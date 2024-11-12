@@ -48,9 +48,15 @@ const BlogPage = ({params}: BlogPageProps) => {
     fetchBlogData();
   },)
 
+
+
   
   return (data?<>
     <div className="bg-gray-300 py-5 px-5 md:px-12 lg:px-28">
+    <meta property="og:title" content="Blog Website" />
+      <meta property="og:description" content="It is a website of Blogs of Chess Nepal" />
+      <meta property="og:image" content={data.image.src} />
+      <meta property="og:url" content={typeof window !== 'undefined' ? window.location.href : ''} />
       <TransitionEffect/>
       <NavBar/>
       <div className="text-center my-24">

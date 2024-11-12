@@ -1,7 +1,10 @@
+'use client'
 import Image, { StaticImageData } from "next/image";
-import { assets } from "@/assets/Assets/assets";
+import { assets, blog_data } from "@/assets/Assets/assets";
 import Link from "next/link";
 import TransitionEffect from "./TransitionEffect";
+
+
 
 interface BlogItemProps{
   title: string
@@ -17,6 +20,7 @@ const BlogItem = ({title,description,category,image,id}:BlogItemProps) => {
     <div className="max-w-[330px] sm:max-w-[300px] bg-white border border-black 
     hover:shadow-[-7px_7px_0px_#661222]">
       <TransitionEffect/>
+
       <Link href={`/blogs/${id}`}>
       {image ? (
         <Image src={image} alt="first" width={400} height={400} className="border border-black"/>
